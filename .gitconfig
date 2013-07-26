@@ -1,0 +1,14 @@
+[user]
+	name = Xiao Jiang
+	email = showbufire@gmail.com
+[core]
+	editor = emacs
+	excludesfile = /home/showbufire/.gitignore_global
+[color]
+	branch = auto
+	status = auto
+	diff = auto
+[alias]
+	st = status
+	br = branch
+	co = checkout
