@@ -56,3 +56,5 @@ function marks {
 }
 
 alias jp="jump"
+alias cc="clear"
+
