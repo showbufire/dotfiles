@@ -40,7 +40,6 @@ alias l='ls -CF'
 alias ipy='ipython'
 alias em='emacs'
 
-
 # bookmarks for directory http://jeroenjanssens.com/2013/08/16/quickly-navigate-your-filesystem-from-the-command-line.html
 export MARKPATH=$HOME/.marks
 function jump { 
@@ -56,4 +55,4 @@ function marks {
     ls -l $MARKPATH | sed 's/  / /g' | cut -d' ' -f9- | sed 's/ -/\t-/g' && echo
 }
 
-
+alias jp="jump"
