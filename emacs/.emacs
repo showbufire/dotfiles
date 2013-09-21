@@ -24,6 +24,8 @@
           (message "Deleted file %s" filename)
 	    (kill-buffer))))))
 
+(global-set-key (kbd "C-c d") 'delete-file-and-buffer)
+
 (global-set-key (kbd "C-x O") (lambda ()
                                 (interactive)
                                 (other-window -1)))
@@ -42,6 +44,8 @@
           (rename-buffer new-name)
           (set-visited-file-name new-name)
           (set-buffer-modified-p nil)))))))
+
+(global-set-key (kbd "C-c r") 'rename-file-and-buffer)
 
 (defun visit-term-buffer ()
   "Create or visit a terminal buffer."
