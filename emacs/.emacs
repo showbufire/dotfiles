@@ -54,3 +54,11 @@
     (switch-to-buffer-other-window "*ansi-term*")))
 
 (global-set-key (kbd "C-c t") 'visit-term-buffer)
+
+(require 'package)
+(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+(package-initialize)
+
+(add-hook 'haml-mode-hook
+               (lambda ()
+                 (setq indent-tabs-mode nil)))
