@@ -76,3 +76,10 @@
 (add-hook 'haml-mode-hook
                (lambda ()
                  (setq indent-tabs-mode nil)))
+
+(defun top-join-line ()
+  "Join the current line with the line beneath it."
+  (interactive)
+  (delete-indentation 1))
+
+(global-set-key (kbd "C-^") 'top-join-line)
