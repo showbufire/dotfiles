@@ -13,3 +13,5 @@
 	st = status
 	br = branch
 	co = checkout
+	df = diff
+	dfg = diff --staged
