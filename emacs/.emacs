@@ -69,6 +69,15 @@
       (kill-new filename)
       (message "Copied buffer file name '%s' to the clipboard." filename))))
 
+(defun top-join-line ()
+  "Join the current line with the line beneath it."
+  (interactive)
+  (delete-indentation 1))
+
+(global-set-key (kbd "C-^") 'top-join-line)
+
+
+;;; haml specific starts
 (require 'package)
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
@@ -77,9 +86,10 @@
                (lambda ()
                  (setq indent-tabs-mode nil)))
 
-(defun top-join-line ()
-  "Join the current line with the line beneath it."
-  (interactive)
-  (delete-indentation 1))
+;;; haml speicfic ends
 
-(global-set-key (kbd "C-^") 'top-join-line)
+;;; rake specific starts
+(add-to-list 'auto-mode-alist '("\\.rake\\'" . ruby-mode))
+;;; rake specific ends
+
+
