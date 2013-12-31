@@ -76,6 +76,7 @@
 
 (global-set-key (kbd "C-^") 'top-join-line)
 
+(require 'dired-x)
 
 ;;; haml specific starts
 (require 'package)
