@@ -4,6 +4,7 @@
 [core]
 	editor = emacs
 	excludesfile = /home/showbufire/.gitignore_global
+	autocrlf = true
 [color]
 	branch = auto
 	status = auto
