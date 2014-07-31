@@ -16,3 +16,4 @@
 	co = checkout
 	df = diff
 	dfg = diff --staged
+	lg = log --oneline -n5
