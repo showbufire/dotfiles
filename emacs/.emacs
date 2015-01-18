@@ -114,7 +114,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-agenda-files nil))
+ '(org-agenda-files nil)
+ '(uniquify-buffer-name-style (quote reverse) nil (uniquify)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -124,3 +125,10 @@
 
 ;; warn when opening files bigger than 100MB
 (setq large-file-warning-threshold 100000000)
+
+(add-to-list 'load-path "~/.emacs.d/git-timemachine/")
+(require 'git-timemachine)
+
+(require 'uniquify)
+;; configure uniquify-buffer-name-style
+;; http://www.emacswiki.org/emacs/uniquify
