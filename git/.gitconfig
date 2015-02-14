@@ -3,7 +3,7 @@
 	email = showbufire@gmail.com
 [core]
 	editor = emacs
-	excludesfile = /home/showbufire/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [color]
 	branch = auto
 	status = auto
