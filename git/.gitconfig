@@ -11,8 +11,15 @@
 	grep = auto
 [alias]
 	st = status
+	ap = add -p
 	br = branch
 	co = checkout
 	df = diff
 	dfg = diff --staged
 	lg = log --oneline -n5
+	cob = checkout -b
+	cm = !git add -A && git commit -m
+	save = !git add -A && git commit -m 'SAVEPOINT'
+	wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+	amd = commit -a --amend
+	bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
