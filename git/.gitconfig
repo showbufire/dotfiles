@@ -2,7 +2,7 @@
 	name = Xiao Jiang
 	email = showbufire@gmail.com
 [core]
-	editor = emacs
+	editor = /usr/local/Cellar/emacs/24.5/bin/emacs
 	excludesfile = ~/.gitignore_global
 [color]
 	branch = auto
