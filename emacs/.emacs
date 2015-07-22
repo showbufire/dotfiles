@@ -129,3 +129,9 @@
 (require 'uniquify)
 ;; configure uniquify-buffer-name-style
 ;; http://www.emacswiki.org/emacs/uniquify
+
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
