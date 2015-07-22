@@ -126,9 +126,6 @@
 ;; warn when opening files bigger than 100MB
 (setq large-file-warning-threshold 100000000)
 
-(add-to-list 'load-path "~/.emacs.d/git-timemachine/")
-(require 'git-timemachine)
-
 (require 'uniquify)
 ;; configure uniquify-buffer-name-style
 ;; http://www.emacswiki.org/emacs/uniquify
