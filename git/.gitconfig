@@ -15,6 +15,7 @@
 	br = branch
 	co = checkout
 	df = diff
+	mylg = log --oneline --author=xiaoj -n 5
 	dfg = diff --staged
 	lg = log --oneline -n5
 	cob = checkout -b
@@ -23,3 +24,4 @@
 	wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
 	amd = commit -a --amend
 	bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
+	shown = show --pretty="format:" --name-only
