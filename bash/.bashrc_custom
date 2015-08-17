@@ -65,3 +65,4 @@ alias cc="clear"
 
 ## http://www.shellperson.net/using-sudo-with-an-alias/
 alias sudo='sudo '
+
