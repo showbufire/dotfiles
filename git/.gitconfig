@@ -21,7 +21,10 @@
 	cob = checkout -b
 	cm = !git add -A && git commit -m
 	save = !git add -A && git commit -m 'SAVEPOINT'
+	wip = !git add -u && git commit -m "WIP"
 	wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
 	amd = commit -a --amend
-	bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
 	shown = show --pretty="format:" --name-only
+	up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+	bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
+	bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
