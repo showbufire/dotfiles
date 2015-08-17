@@ -9,10 +9,10 @@
 ;; configure uniquify-buffer-name-style
 ;; http://www.emacswiki.org/emacs/uniquify
 (require 'uniquify)
-(require 'go-mode)
 
 ;;; local config files
 (add-to-list 'load-path "~/.emacs.d/mycf/")
+(load "cf-packages")
 (load "cf-global")
 (load "cf-ruby")
 (load "cf-go")
