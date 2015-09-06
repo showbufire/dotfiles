@@ -65,4 +65,6 @@ alias cc="clear"
 
 ## http://www.shellperson.net/using-sudo-with-an-alias/
 alias sudo='sudo '
-
+alias gg='git grep'
+alias ggi='git grep -i'
+alias goins='go install'
