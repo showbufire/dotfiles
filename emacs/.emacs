@@ -35,3 +35,8 @@
 
 ;; warn when opening files bigger than 100MB
 (setq large-file-warning-threshold 100000000)
+(setq tab-always-indent 'complete)
+
+;; turn off annoying sound
+(setq ring-bell-function 'ignore)
+(setq visible-bell t)

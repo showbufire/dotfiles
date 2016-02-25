@@ -88,3 +88,5 @@
   "Insert copyright header."
   (interactive)
   (insert "`"))
+
+(global-set-key (kbd "C-c i m") 'imenu-anywhere)
