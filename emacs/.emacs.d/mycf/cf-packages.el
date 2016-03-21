@@ -19,7 +19,11 @@ Return a list of installed packages or nil for every skipped package."
 (or (file-exists-p package-user-dir)
     (package-refresh-contents))
 
-(ensure-package-installed 'go-mode 'coffee-mode 'git-timemachine 'haskell-mode 'aggressive-indent 'imenu-anywhere 'inf-ruby)
+(ensure-package-installed 'go-mode 'coffee-mode 'git-timemachine 'haskell-mode 'inf-ruby)
+
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(ido-mode 1)
 
 ;; activate installed packages
 (package-initialize)
