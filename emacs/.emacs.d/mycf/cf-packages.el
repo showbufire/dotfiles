@@ -21,9 +21,5 @@ Return a list of installed packages or nil for every skipped package."
 
 (ensure-package-installed 'go-mode 'coffee-mode 'git-timemachine 'haskell-mode 'inf-ruby)
 
-(setq ido-enable-flex-matching t)
-(setq ido-everywhere t)
-(ido-mode 1)
-
 ;; activate installed packages
 (package-initialize)

@@ -83,10 +83,11 @@
       `((".*" ,temporary-file-directory t)))
 
 (global-set-key (kbd "C-c b") 'my-insert-backtick)
-
 (defun my-insert-backtick ()
   "Insert copyright header."
   (interactive)
   (insert "`"))
 
-(global-set-key (kbd "C-c i m") 'imenu-anywhere)
+(require 'ido)
+(ido-mode t)
+(setq ido-enable-flex-matching t)
