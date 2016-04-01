@@ -16,7 +16,6 @@
   (if (not (string-match "go" compile-command))
       (set (make-local-variable 'compile-command)
            "go generate && go build -v && go test -v && go vet"))
-  ; Godef jump key binding
-  (local-set-key (kbd "M-.") 'godef-jump))
+  (local-set-key (kbd "C-c f n") 'go-goto-function-name))
 (add-hook 'go-mode-hook 'my-go-mode-hook)
 (load-file "$GOPATH/src/golang.org/x/tools/cmd/oracle/oracle.el")
