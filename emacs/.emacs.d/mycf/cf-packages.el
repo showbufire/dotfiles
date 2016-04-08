@@ -1,3 +1,4 @@
+;;; This file controls the list of packages installed.
 ;;; source: http://stackoverflow.com/questions/10092322/how-to-automatically-install-emacs-packages-by-specifying-a-list-of-package-name
 
 (defun ensure-package-installed (&rest packages)
@@ -19,7 +20,8 @@ Return a list of installed packages or nil for every skipped package."
 (or (file-exists-p package-user-dir)
     (package-refresh-contents))
 
-(ensure-package-installed 'go-mode 'coffee-mode 'git-timemachine 'haskell-mode 'inf-ruby)
+(ensure-package-installed 'go-mode 'coffee-mode 'git-timemachine 'haskell-mode
+			  'inf-ruby 'gh-md)
 
 ;; activate installed packages
 (package-initialize)

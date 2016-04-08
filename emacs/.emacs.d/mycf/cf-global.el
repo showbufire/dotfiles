@@ -1,3 +1,5 @@
+;;; This file controls some global setting and key bindings.
+
 (defun indent-buffer ()
   "Indent the currently visited buffer."
   (interactive)
