@@ -17,6 +17,7 @@
 (load "cf-global")
 (load "cf-ruby")
 (load "cf-go")
+(load "cf-haskell")
 
 ;;; some variables
 (custom-set-variables
