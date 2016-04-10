@@ -8,3 +8,8 @@
       (local-set-key (kbd "C-c C-c") 'gh-md-render-buffer)))
 
 (add-hook 'text-mode-hook 'markdown-compile-hook)
+
+(defun compile-kbd-hook ()
+  (local-set-key (kbd "C-c C-c") 'compile))
+
+(add-hook 'prog-mode-hook 'compile-kbd-hook)
