@@ -1,6 +1,6 @@
-;;; all those secondary major/minor mode related local configs are here
+;; all those secondary major/minor mode related local configs are here
 
-;;; for markdown
+;; for markdown
 
 (defun markdown-compile-hook ()
   (if  (string-match "md"
@@ -9,6 +9,7 @@
 
 (add-hook 'text-mode-hook 'markdown-compile-hook)
 
+;; compile for prog-mode
 (defun compile-kbd-hook ()
   (local-set-key (kbd "C-c C-c") 'compile))
 
