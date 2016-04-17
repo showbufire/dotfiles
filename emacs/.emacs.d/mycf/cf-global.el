@@ -76,7 +76,7 @@
   (interactive)
   (delete-indentation 1))
 
-(global-set-key (kbd "C-^") 'top-join-line)
+(global-set-key (kbd "C-c ^") 'top-join-line)
 
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))
