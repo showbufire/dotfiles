@@ -21,7 +21,9 @@ Return a list of installed packages or nil for every skipped package."
     (package-refresh-contents))
 
 (ensure-package-installed 'go-mode 'coffee-mode 'git-timemachine 'haskell-mode
-			  'inf-ruby 'gh-md)
+			  'inf-ruby 'gh-md 'nginx-mode)
+
+(require 'nginx-mode)
 
 ;; activate installed packages
 (package-initialize)
