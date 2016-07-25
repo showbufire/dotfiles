@@ -18,4 +18,4 @@
            "go generate && go build -v && go test -v && go vet"))
   (local-set-key (kbd "C-c f n") 'go-goto-function-name))
 (add-hook 'go-mode-hook 'my-go-mode-hook)
-(load-file "$GOPATH/src/golang.org/x/tools/cmd/oracle/oracle.el")
+;;; (load-file "$GOPATH/src/golang.org/x/tools/cmd/oracle/oracle.el")
