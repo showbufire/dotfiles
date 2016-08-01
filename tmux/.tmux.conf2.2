@@ -1,0 +1,48 @@
+#disable C-b
+unbind-key C-b
+
+#set the prefix to `
+set-option -g prefix `
+
+#enable mouse scroll up, turn off for 2.2
+#setw -g mode-mouse on
+
+# force a reload of the config file
+unbind r
+bind r source-file ~/.tmux.conf
+
+# colors
+# I don't think this is working properly.
+set -g default-terminal "screen-256color"
+
+# unicode turn off for 2.2
+# setw -g utf8 on
+# set -g status-utf8 on
+
+# status bar config
+set -g status-left "#h:[#S]"
+set -g status-left-length 50
+setw -g window-status-current-format "|#I:#W|"
+set-window-option -g automatic-rename off
+
+# listen to alerts from all windows
+set -g bell-action any
+
+# rebind pane tiling
+bind V split-window -h
+bind H split-window
+
+# screen like window toggling
+bind Tab last-window
+
+# vim movement bindings
+set-window-option -g mode-keys vi
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+# resize panes
+bind u resize-pane -Z
+bind J select-pane -D \; resize-pane -Z
+bind K select-pane -U \; resize-pane -Z
