@@ -98,3 +98,12 @@
 (add-to-list 'auto-mode-alist '("\\.bashrc.*" . sh-mode))
 ;; use text-mode to open markdown files
 (add-to-list 'auto-mode-alist '("\\.md\\'" . text-mode))
+
+;; compile for prog-mode
+(defun compile-kbd-hook ()
+  (local-set-key (kbd "C-c C-c") 'compile))
+
+(add-hook 'prog-mode-hook 'compile-kbd-hook)
+
+(add-to-list 'auto-mode-alist '("\\.rake\\'" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Rakefile\\'" . ruby-mode))

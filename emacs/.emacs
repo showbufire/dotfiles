@@ -15,10 +15,8 @@
 (add-to-list 'load-path "~/.emacs.d/mycf/")
 (load "cf-packages")
 (load "cf-global")
-(load "cf-ruby")
 (load "cf-go")
 (load "cf-haskell")
-(load "cf-misc")
 
 ;;; some variables
 (custom-set-variables

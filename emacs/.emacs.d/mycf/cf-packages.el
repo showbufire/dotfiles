@@ -20,10 +20,18 @@ Return a list of installed packages or nil for every skipped package."
 (or (file-exists-p package-user-dir)
     (package-refresh-contents))
 
-(ensure-package-installed 'go-mode 'coffee-mode 'git-timemachine 'haskell-mode
-			  'inf-ruby 'gh-md 'nginx-mode)
-
-(require 'nginx-mode)
+(ensure-package-installed 'go-mode 'coffee-mode 'haskell-mode
+			  'gh-md 'gradle-mode)
 
 ;; activate installed packages
 (package-initialize)
+
+;;; For each package initialization
+
+;; for markdown
+(defun markdown-compile-hook ()
+  (if  (string-match "md"
+		     (file-name-extension buffer-file-name))
+      (local-set-key (kbd "C-c C-c") 'gh-md-render-buffer)))
+
+(add-hook 'text-mode-hook 'markdown-compile-hook)
