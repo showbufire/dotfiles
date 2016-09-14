@@ -30,7 +30,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-export EDITOR="emacs"
+export EDITOR="emacs -nw"
 
 # more aliases
 alias ll='ls -alF'
