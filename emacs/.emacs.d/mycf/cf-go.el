@@ -5,7 +5,7 @@
 ;;; setup $GOPATH $GOROOT
 ;;; go get golang.org/x/tools/cmd/goimports
 ;;; go get golang.org/x/tools/cmd/oracle && sudo mv $GOPATH/bin/oracle $GOROOT/bin/
-
+;;; add $GOPATH/bin to the $PATH
 
 (defun my-go-mode-hook ()
   ; Use goimports instead of go-fmt
