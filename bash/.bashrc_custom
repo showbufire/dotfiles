@@ -38,7 +38,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 alias ipy='ipython'
-alias em='emacs'
+alias em='emacs -nw'
 
 alias tma='tmux attach -d -t'
 alias tmn='tmux new -s'
