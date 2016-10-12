@@ -107,3 +107,6 @@
 
 (add-to-list 'auto-mode-alist '("\\.rake\\'" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Rakefile\\'" . ruby-mode))
+
+(custom-set-variables
+ '(show-trailing-whitespace t))
