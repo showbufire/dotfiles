@@ -110,3 +110,6 @@
 
 (custom-set-variables
  '(show-trailing-whitespace t))
+
+;; turn off tabs
+(setq-default indent-tabs-mode nil)
