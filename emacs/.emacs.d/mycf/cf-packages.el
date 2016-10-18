@@ -35,3 +35,11 @@ Return a list of installed packages or nil for every skipped package."
       (local-set-key (kbd "C-c C-c") 'gh-md-render-buffer)))
 
 (add-hook 'text-mode-hook 'markdown-compile-hook)
+
+;; enable whitespace for js mode
+(require 'whitespace)
+(add-hook 'js-mode-hook
+	  (lambda ()
+	    (setq whitespace-line-column 80)
+	    (setq whitespace-style '(face lines-tail))
+	    (whitespace-mode t)))
