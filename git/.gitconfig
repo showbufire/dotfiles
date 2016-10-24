@@ -1,6 +1,5 @@
 [user]
 	name = Xiao Jiang
-	email = showbufire@gmail.com
 [core]
 	editor = "emacs -nw"
 	excludesfile = ~/.gitignore_global
