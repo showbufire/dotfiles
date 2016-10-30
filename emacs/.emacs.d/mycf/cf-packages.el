@@ -21,7 +21,7 @@ Return a list of installed packages or nil for every skipped package."
     (package-refresh-contents))
 
 (ensure-package-installed 'go-mode 'coffee-mode 'haskell-mode
-			  'gh-md 'gradle-mode)
+			  'gh-md 'gradle-mode 'csharp-mode 'php-mode)
 
 ;; activate installed packages
 (package-initialize)
