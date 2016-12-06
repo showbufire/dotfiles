@@ -95,9 +95,11 @@
 (setq ido-enable-flex-matching t)
 
 ;; use sh-mode to load bashrc* files
-(add-to-list 'auto-mode-alist '("\\.bashrc.*" . sh-mode))
+(add-to-list 'auto-mode-alist '("\\.bash.*" . sh-mode))
 ;; use text-mode to open markdown files
 (add-to-list 'auto-mode-alist '("\\.md\\'" . text-mode))
+;; use js-mode to open .graphql files
+(add-to-list 'auto-mode-alist '("\\.graphql\\'" . js-mode))
 
 ;; compile for prog-mode
 (defun compile-kbd-hook ()
