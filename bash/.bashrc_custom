@@ -68,3 +68,5 @@ alias sudo='sudo '
 alias gg='git grep'
 alias ggi='git grep -i'
 alias goins='go install'
+
+PROMPT_DIRTRIM=3
