@@ -115,3 +115,6 @@
 
 ;; turn off tabs
 (setq-default indent-tabs-mode nil)
+
+;; buck
+(add-to-list 'auto-mode-alist '("BUCK\\'" . python-mode))
