@@ -118,3 +118,6 @@
 
 ;; buck
 (add-to-list 'auto-mode-alist '("BUCK\\'" . python-mode))
+
+;; turn off vc backends because of mecurial is causing slowness
+(setq vc-handled-backends nil)
