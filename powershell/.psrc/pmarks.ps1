@@ -18,3 +18,5 @@ function jump($name) {
 }
 
 Set-Alias -Name jp -Value jump
+
+write-host "Command line bookmarks loaded." -ForegroundColor Magenta
