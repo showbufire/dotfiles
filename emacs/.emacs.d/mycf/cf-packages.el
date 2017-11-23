@@ -22,7 +22,7 @@ Return a list of installed packages or nil for every skipped package."
 
 (ensure-package-installed 'go-mode 'coffee-mode 'haskell-mode
 			  'gh-md 'gradle-mode 'csharp-mode 'php-mode
-                          'cmake-mode)
+                          'cmake-mode 'json-mode)
 
 ;; activate installed packages
 (package-initialize)
