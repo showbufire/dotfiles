@@ -26,6 +26,10 @@
  ;; If there is more than one, they won't work right.
  '(js-indent-level 2)
  '(org-agenda-files nil)
+ '(package-selected-packages
+   (quote
+    (json-mode cmake-mode php-mode csharp-mode gradle-mode gh-md haskell-mode coffee-mode go-mode)))
+ '(show-trailing-whitespace t)
  '(uniquify-buffer-name-style (quote reverse) nil (uniquify)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
