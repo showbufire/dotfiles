@@ -1,7 +1,5 @@
 (require 'package)
-;;; add marmalade
 ;;; more: http://batsov.com/articles/2012/02/19/package-management-in-emacs-the-good-the-bad-and-the-ugly/
-(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
 
@@ -13,10 +11,7 @@
 
 ;;; local config files
 (add-to-list 'load-path "~/.emacs.d/mycf/")
-(load "cf-packages")
 (load "cf-global")
-(load "cf-go")
-(load "cf-haskell")
 
 ;;; some variables
 (custom-set-variables
@@ -28,7 +23,7 @@
  '(org-agenda-files nil)
  '(package-selected-packages
    (quote
-    (json-mode cmake-mode php-mode csharp-mode gradle-mode gh-md haskell-mode coffee-mode go-mode)))
+    (json-mode gh-md)))
  '(show-trailing-whitespace t)
  '(uniquify-buffer-name-style (quote reverse) nil (uniquify)))
 (custom-set-faces
