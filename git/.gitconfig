@@ -21,7 +21,8 @@
 	save = !git add -A && git commit -m 'SAVEPOINT'
 	wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
 	amd = commit -a --amend
-	shown = show --pretty="format:" --name-only
+        shown = show --pretty="format:" --name-only
+        cutl = commit --allow-empty -m '========== CUTLINE =========='
 [push]
 	default = current
 [merge]
